@@ -32,4 +32,6 @@ class stack
     newNode->data = value;
     newNode->next = top;
     top = newNode;
+    cout << "Push value: " << value << endl;
+    return value;
 }
