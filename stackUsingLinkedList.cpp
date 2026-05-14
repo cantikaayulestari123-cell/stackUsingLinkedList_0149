@@ -5,36 +5,36 @@ using namespace std;
 class Node
 {
     public:
-    int data;
-    Node *next;
+        int data;
+        Node *next;
 
-    Node()
-{
-    next = NULL;
-}
+        Node()
+        {
+            next = NULL;
+        }
 };
 
 // stack class
 class stack
 {
-    private:
+private:
     Node *top;
 
-    public:
+public:
     stack()
     {
         top = NULL;
     }
 
     int push(int value)
-{
-    Node *newNode = new Node();
-    newNode->data = value;
-    newNode->next = top;
-    top = newNode;
-    cout << "Push value: " << value << endl;
-    return value;
-}
+    {
+        Node *newNode = new Node();
+        newNode->data = value;
+        newNode->next = top;
+        top = newNode;
+        cout << "Push value: " << value << endl;
+        return value;
+    }
     void pop()
     {
        if (isEmpty())
