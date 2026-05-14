@@ -63,4 +63,10 @@ class stack
         }
         cout << endl;
     }
+  }
+
+    bool isEmpty()
+    {
+        return top == NULL;
+    }
 }
